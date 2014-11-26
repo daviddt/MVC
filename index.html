@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="test-component">
+		
+		<h1>My skills:</h1>
+
+		<%if(this.showSkills) {%>
+		    <%for(var index in this.skills) {%> 
+		  	  <a href="#"><%this.skills[index]%></a>
+		  	  <p>test</p>
+		    <%}%>
+		<%} else {%>
+		    <p>none</p>
+		<%}%>
+
+	</div>
+	
+	<script src="js/template-utility.js"></script>
+	<script src="js/template-engine.js"></script>
+	<script src="js/template-component.js"></script>
+	<script src="js/test.js"></script>
+
+</body>
+</html>
